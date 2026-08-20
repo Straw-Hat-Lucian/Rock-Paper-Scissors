@@ -12,13 +12,14 @@
 
     <h2 onclick="resetGame()">RESET</h2>
     <div id="choices">
-        <button onclick="playGame('rock')">🪨</button>
-        <button onclick="playGame('paper')">📄</button>
-        <button onclick="playGame('scissors')">✂️</button>
+        <button onclick="playGame('rock')">✊</button>
+        <button onclick="playGame('paper')">🖖</button>
+        <button onclick="playGame('scissors')">✌️</button>
     </div>
-
-    <div id="playerDisplay">Player: </div>
-    <div id="computerDisplay">Computer: </div>
+    <div emoji-row>
+        <div id="playerDisplay"><span id="playerChoiceDisplay"></span></div>
+        <div id="computerDisplay"><span id="computerChoiceDisplay"></span></div>
+    </div>
     <div id="resultDisplay"></div>
 
     <div class="scoreDisplay">Player Score:

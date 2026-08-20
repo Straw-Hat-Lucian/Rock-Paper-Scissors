@@ -13,7 +13,7 @@ body{
 }
 
 h1{
-    font-size: 3.5rem;
+    font-size: 3rem;
     color: #333;
     margin-bottom: 10px;
 }
@@ -36,7 +36,7 @@ h2{
 }
 
 .choices button{
-    font-size: 100rem;
+    font-size: 4rem;
     padding: 0px 20px;
     border-radius: 15px;
     background: transparent;
@@ -50,7 +50,7 @@ h2{
 
 
 .button{
-    font-size: 6rem;
+    font-size: 4rem;
 }
 
 .choices :hover{
@@ -58,16 +58,16 @@ h2{
 }
 
 #playerDisplay, #computerDisplay{
-    font-size: 3rem;
+    font-size: 2.5rem;
 }
 
 #resultDisplay{
-    font-size: 3rem;
+    font-size: 2.5rem;
     margin: 15px 0;
 }
 
 .scoreDisplay{
-    font-size: 3rem;
+    font-size: 2.5rem;
 }
 
 .greenText, #playerScoreDisplay{
@@ -77,3 +77,34 @@ h2{
 .redText, #computerScoreDisplay{
     color: darkred;
 }
+
+
+
+/* This makes only the emojis very big */
+#playerDisplay span, #computerDisplay span {
+    font-size: 4rem;
+    display: inline-block; /* Required for moving animations to work */
+}
+
+/* This targets only the emojis for the bouncing effect */
+.bouncing {
+    animation: jump 0.5s infinite ease-in-out;
+}
+
+@keyframes jump {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px); /* Bounces up 20px */
+    }
+}
+
+.emoji-row {
+    display: flex;
+    flex-direction: row;       /* Forces them onto the same line */
+    justify-content: center;   /* Centers them horizontally on the screen */
+    gap: 60px;                 /* Puts space between the player and computer */
+    width: 100%;               /* Spans the full width of the container */
+}
+
