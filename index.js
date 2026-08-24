@@ -60,7 +60,7 @@ function playGame(playerChoice){
     }
     playerDisplay.classList.remove("bouncing");
     computerDisplay.classList.remove("bouncing")
-}, 2000);
+}, 1000);
 }
 
 function resetGame(){
